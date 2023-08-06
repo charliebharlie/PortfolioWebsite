@@ -29,7 +29,7 @@
 <section class ="header">
 
   <nav>
-    <p href="index">getAbout()</p>
+    <p href="index">getTriageProject()</p>
     <div class="nav-links">
       <ul>
         <li><a href="index.html">getHome()</a></li>
@@ -45,21 +45,64 @@
   </nav>
 </section>
 
+<h1 class = "projects-header">getTriage<span class = "red-name">project</span>()</h1>
+
 <section class = "projects-list-text">
 
+  <div class = "projects-highlighters"> //Description </div>
+  This project is designed as an efficient method for <span class ="red">prioritizing patients
+</span> based on their medical needs and the severity of their conditions. Leveraging my
+  technical expertise, I utilized a <span class ="red">min-array heap</span> data structure to
+  organize those with more severe triage levels.
+  <a href = "https://github.com/charliebharlie/TriageLevel" class = "projects-list-link" target =
+    "+_blank"> //Here is a link to the code </a>
+
+  <div class = "projects-highlighters"> //Features </div>
+  <ul class = projects-features-list>
+    <li>
+      Patients are categorized into specific triage levels: Immediate (<span
+      style = "color:red">Red</span>) for life-threatening cases, Delayed (<span
+      style="color:gold">Yellow</span>) for serious but stable conditions, and Minimal (<span
+      style = "color: green">Green</span>) for non-urgent cases.
+    </li>
+
+    <li>
+      <span class ="red"> Interactive platform</span> where users can access all necessary
+      details for a clinic based on the triage level <strong class = "parenthesis">(see the images
+      below to see functions)</strong>, ensuring appropriate patient care
+    </li>
+
+    <li>
+      Min-array heap enables <span class = "red">constant-time retrieval</span> of the highest
+      priority patient, ensuring <span class = "red"> efficiency</span> in <span class ="red">
+      emergency situations</span> with a large number of patients.
+    </li>
+
+    <li>
+      <span class = "red">Dynamic nature</span> of the min array heap-based solution allows
+      for <span class = "red">real-time adaptability</span> during high-stress scenarios with
+      rapidly changing demands.
+    </li>
+
+    </ul>
+  <div class = "projects-highlighters">//Some images of examples below:</div>
+
 </section>
+<div class = projects-images>
+  <ul>
+    <li>
+      <img src = "img/TriageTestWithPatients.png">
+    </li>
 
+    <li>
+      <img src = "img/TriageTestRemovePatients.png">
+    </li>
 
-
-
-
-
-
-
-
-
-
-
+    <li>
+      <img src = "img/TriageTestSeenPatient.png">
+    </li>
+  </ul>
+</div>
 
 
 <div class = "spacer">
