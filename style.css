@@ -224,7 +224,6 @@ div{
 
 
 .home-page-1 {
-  display: grid;
   width: 1600px;
   color: var(--main-text-color);
 }
@@ -429,16 +428,62 @@ div{
   color: var(--main-highlight-color);
 }
 .pic img{
-  width: 400px;
-  height: auto;
+  margin-left: 10%;
 }
 
 .about-container {
   width: 1600px;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 100px;
   padding-top: 50px;
+  margin-left: 10%;
+}
+
+.about-container ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100%);
+}
+
+.about-container ul li{
+  grid-column-gap: 100px;
+  display: flex;
+}
+
+.about-container ul li p{
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 3;
+  padding: 32px;
+  color: var(--main-text-color);
+  background: var(--main-page-color);
+  text-align: center;
+  font-family: Georgia;
+}
+
+.about-container ul li img{
+  padding: 50px;
+  background: var(--main-page-color)
+}
+
+.about-container ul li p a{
+  display: block;
+  margin-top: 50px;
+  font-weight:bold;
+  border-radius: 25px;
+  background: var(--main-highlight-color);
+  transition: .6s;
+}
+
+.about-container ul li a:hover{
+  background: var(--main-bright-color);
+  transition: .6s;
+}
+
+.about-bold-text{
+  white-space: nowrap;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+
 }
 
 .about-header, .projects-header, .works-header{
@@ -525,13 +570,6 @@ ul {
   padding-bottom: 30px;
 }
 
-.about-text{
-  width: 600px;
-  color: var(--main-text-color);
-  text-align: center;
-  background: var(--main-page-color);
-  padding: 50px;
-}
 .about-text h1{
   margin-bottom: 20px;
   text-transform: capitalize;
@@ -574,21 +612,7 @@ ul {
   color:var(--main-highlight-color);
   transition:.6s;
 }
-.resume-button{
-  color:var(--main-background-color);
-  font-weight:bold;
-  border-radius: 25px;
-  background: var(--main-highlight-color);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  transition: .6s;
-}
-.resume-button:hover{
-  background: var(--main-bright-color);
-  transition: .6s;
-}
+
 
 .description-header{
   display: flex;
