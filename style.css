@@ -391,6 +391,7 @@ div{
   margin-bottom: 20px;
   margin-right: 40px;
 }
+
 .socials{
   display:inline-flex;
 }
@@ -510,7 +511,6 @@ div{
   font-weight: bold;
   color: var(--main-text-color);
 }
-
 
 ul {
   list-style-type: none;
@@ -687,4 +687,232 @@ ul {
 
 .projects-images ul li{
   text-align: center;
+}
+
+
+@media only screen and (min-width: 851px) {
+  .screenshots ul{
+    text-align:center;
+    padding-top:3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,30%);
+    grid-column-gap: 3%;
+    grid-row-gap: 10%;
+
+  }
+  .madeWith{
+    justify-content:space-between;
+    line-height: 55px;
+    padding-top:200px;
+    text-align:center;
+
+  }
+  .madeWithTH{
+    justify-content:space-between;
+    line-height: 55px;
+    padding-top:200px;
+    text-align:center;
+  }
+  .nav-links {
+    display:block;
+  }
+  .menuButton{
+    visibility:hidden;
+  }
+  .projects-list ul{
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:2%;
+    padding-bottom:0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,30%);
+    grid-column-gap: 3%;
+    grid-row-gap: 10%;
+  }
+  .description-content ul li,.projects-description ul li,.project-page-description ul li{
+    font-size:20px;
+    width:60%;
+    padding-bottom: 10px;
+    list-style:none;
+    /* color:rgb(153, 153, 153); */
+    line-height:150%;
+  }
+  .aboutHeader,.projects-header,.project-page-header{
+    display: block;
+    text-align: left;
+    padding-top:100px;
+    font-size:70px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color:#fff;
+  }
+  .about-grid li{
+    list-style:none;
+    color: rgb(153, 153, 153);
+    font-size: 17px;
+  }
+
+  .about-grid h2{
+    padding-top:40px;
+  }
+  .work-list ul,.languages-list ul,.skills-list ul,.me-list ul{
+    padding-top:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-column-gap: 15%;
+    grid-row-gap: 30px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 850px) and (min-width: 0px){
+  .screenshots ul{
+    text-align:center;
+    padding-top:3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100%);
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+
+  }
+  .nav-links {
+    display:none;
+  }
+  .menuButton{
+    visibility:visible;
+  }
+  .projects-list ul{
+    padding-top:3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,30%);
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+  }
+  .madeWith, .madeWithTH{
+    line-height: 35px;
+    /* padding-top:150px; */
+    text-align:center;
+    padding-bottom:5%;
+  }
+  .projects-list ul{
+    padding-top:40px;
+    padding-right:10%;
+    margin-bottom:250%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100%);
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+
+  }
+}
+@media only screen and (max-width: 850px) and (min-width: 451px){
+
+  .aboutHeader,.projects-header,.project-page-header{
+    display: block;
+    text-align: left;
+    padding-top:200px;
+    font-size:50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color:#fff;
+  }
+}
+@media only screen and (max-width: 850px){
+  .madeWith, .madeWithTH{
+    line-height: 35px;
+    /* padding-top:150px; */
+    text-align:center;
+    padding-bottom:5%;
+  }
+  .projects-list ul{
+    padding-top:40px;
+    padding-right:10%;
+    margin-bottom:150%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100%);
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+
+  }
+  .description-content ul li,.projects-description ul li,.project-page-description ul li{
+    font-size:15px;
+    width:80%;
+    padding-bottom: 10px;
+    list-style:none;
+    /* color:rgb(153, 153, 153); */
+    line-height:150%;
+  }
+
+  .about-grid li{
+    list-style:none;
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+  }
+
+  .about-grid h2{
+    padding-top:40px;
+  }
+  .about-grid h2{
+    font-size:20px;
+  }
+  .work-list ul,.languages-list ul,.skills-list ul,.me-list ul{
+    padding-top:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-column-gap: 150px;
+    grid-row-gap: 30px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .madeWith, .madeWithTH{
+    line-height: 35px;
+    justify-content:space-between;
+    text-align:center;
+    padding-bottom:5%;
+    bottom:0;
+  }
+  .projects-list ul{
+
+    padding-top:40px;
+    padding-right:10%;
+    padding-left:10%;
+    display: grid;
+    grid-template-columns: repeat(1,80%);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+
+  }
+  .about-grid li{
+    list-style:none;
+    color: rgb(153, 153, 153);
+    font-size: 18px;
+  }
+
+  .about-grid h2{
+    padding-top:40px;
+  }
+  .about-grid h2{
+    font-size:23px;
+  }
+  .work-list ul,.languages-list ul,.skills-list ul,.me-list ul{
+    padding-top:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,40%);
+    grid-column-gap: 5%;
+    grid-row-gap: 30px;
+    line-height: 25px;
+  }
+  @media only screen and (max-width:450px){
+    .aboutHeader,.projects-header,.project-page-header{
+      display: block;
+      text-align: left;
+      padding-top:200px;
+      font-size:30px;
+      font-weight: bold;
+      padding-bottom: 30px;
+      color:#fff;
+    }
+  }
 }
