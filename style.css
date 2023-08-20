@@ -689,8 +689,15 @@ ul {
   text-align: center;
 }
 
+/* Screen for Macbooks  */
+@media only screen and (max-width: 2304px) and (min-width: 1200px){
+  .home-page-1{
+    width: 1200px;
+  }
 
-@media only screen and (min-width: 851px) {
+  .home-page-1{
+    width: 400px;
+  }
   .screenshots ul{
     text-align:center;
     padding-top:3%;
@@ -716,9 +723,11 @@ ul {
   .nav-links {
     display:block;
   }
+
   .menuButton{
-    visibility:hidden;
+    visibility: hidden;
   }
+
   .projects-list ul{
     margin-left:5%;
     margin-right:5%;
@@ -804,8 +813,9 @@ ul {
 
   }
 }
-@media only screen and (max-width: 850px) and (min-width: 451px){
 
+/* Screen for Phones  */
+@media only screen and (max-width: 850px){
   .aboutHeader,.projects-header,.project-page-header{
     display: block;
     text-align: left;
@@ -815,8 +825,7 @@ ul {
     padding-bottom: 30px;
     color:#fff;
   }
-}
-@media only screen and (max-width: 850px){
+
   .madeWith, .madeWithTH{
     line-height: 35px;
     /* padding-top:150px; */
@@ -864,55 +873,3 @@ ul {
   }
 }
 
-@media only screen and (max-width: 650px) {
-
-  .madeWith, .madeWithTH{
-    line-height: 35px;
-    justify-content:space-between;
-    text-align:center;
-    padding-bottom:5%;
-    bottom:0;
-  }
-  .projects-list ul{
-
-    padding-top:40px;
-    padding-right:10%;
-    padding-left:10%;
-    display: grid;
-    grid-template-columns: repeat(1,80%);
-    grid-column-gap: 15%;
-    grid-row-gap: 10%;
-
-  }
-  .about-grid li{
-    list-style:none;
-    color: rgb(153, 153, 153);
-    font-size: 18px;
-  }
-
-  .about-grid h2{
-    padding-top:40px;
-  }
-  .about-grid h2{
-    font-size:23px;
-  }
-  .work-list ul,.languages-list ul,.skills-list ul,.me-list ul{
-    padding-top:20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,40%);
-    grid-column-gap: 5%;
-    grid-row-gap: 30px;
-    line-height: 25px;
-  }
-  @media only screen and (max-width:450px){
-    .aboutHeader,.projects-header,.project-page-header{
-      display: block;
-      text-align: left;
-      padding-top:200px;
-      font-size:30px;
-      font-weight: bold;
-      padding-bottom: 30px;
-      color:#fff;
-    }
-  }
-}
