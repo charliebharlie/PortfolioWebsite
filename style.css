@@ -691,11 +691,28 @@ ul {
 /* Screen for Macbooks  */
 @media only screen and (max-width: 2304px) and (min-width: 1200px){
   .home-page-1, .about-container, .works-text, .projects-list-text{
-    width: 1400px;
+    width: 1200px;
   }
 
   .menuButton{
     visibility: hidden;
+  }
+
+  .home-page-1 li p{
+    font-size: 20px;
+  }
+
+  .home-page-bold-text{
+    font-size: 36px;
+  }
+
+  .home-page-1 ul li img, .home-page-work{
+    font-size: 400px;
+    width: 400px;
+  }
+
+  .about-container ul li p{
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 850px) and (min-width: 0px){
