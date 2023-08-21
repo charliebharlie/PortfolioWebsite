@@ -687,7 +687,11 @@ ul {
 .projects-images ul li{
   text-align: center;
 }
-
+@media only screen and (min-width: 2305px){
+  .menuButton{
+    visibility: hidden;
+  }
+}
 /* Screen for Macbooks  */
 @media only screen and (max-width: 2304px) and (min-width: 1200px){
   .home-page-1, .about-container, .works-text, .projects-list-text{
@@ -715,57 +719,80 @@ ul {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 850px) and (min-width: 0px){
-  .screenshots ul{
-    text-align:center;
-    padding-top:3%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,100%);
-    grid-column-gap: 3%;
-    grid-row-gap: 2%;
 
-  }
-  .nav-links {
-    display:none;
-  }
-  .menuButton{
-    visibility:visible;
-  }
-  .projects-list ul{
-    padding-top:3%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,30%);
-    grid-column-gap: 3%;
-    grid-row-gap: 2%;
-  }
-  .madeWith, .madeWithTH{
-    line-height: 35px;
-    /* padding-top:150px; */
-    text-align:center;
-    padding-bottom:5%;
-  }
-  .projects-list ul{
-    padding-top:40px;
-    padding-right:10%;
-    margin-bottom:250%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,100%);
-    grid-column-gap: 10%;
-    grid-row-gap: 10%;
-
-  }
-}
-
-/* Screen for Phones  */
 @media only screen and (max-width: 850px) {
-  .aboutHeader, .projects-header, .project-page-header {
-    display: block;
-    text-align: left;
-    padding-top: 200px;
-    font-size: 50px;
-    font-weight: bold;
+  .home-page-1, .about-container, .works-text, .projects-list-text{
+    width: 400px;
+  }
+
+  .menuButton{
+    visibility: hidden;
+  }
+
+  .home-page-1 li p{
+    font-size: 7px;
+    letter-spacing: 1px;
+    line-height: 3;
+    padding: 10px;
+  }
+
+  .home-page-bold-text{
+    font-size: 10px;
+  }
+
+  .home-page-1 ul li img, .home-page-work{
+    font-size: 100px;
+    width: 100px;
+    padding: 5px;
+  }
+
+  .home-page-1 li{
+    padding-top: 50px;
+    display: flex;
+    grid-column-gap: 20px;
+  }
+
+  .about-container{
+    margin-left: 5%;
+    padding-top: 35px;
+  }
+
+  .about-container ul li p{
+    font-size: 7px;
+    padding: 5px;
+    width: 225px;
+  }
+
+  .about-container ul li{
+    display: flex;
+    grid-column-gap: 20px;
+
+  }
+
+  .about-container ul li img{
+    width: 100px;
+    padding: 5px;
+  }
+
+  .about-bold-text{
+    font-size: 10px;
+  }
+
+  .about-header, .projects-header, .works-header{
+    width: 350px;
+    font-size:32px;
     padding-bottom: 30px;
-    color: #fff;
+    margin-left: 5%;
+  }
+
+  .about-content{
+    width: 350px;
+    font-size: 16px;
+    margin-left: 5%;
+  }
+
+  .about-container ul li p a{
+    margin-top: 20px;
   }
 
   .madeWith, .madeWithTH {
@@ -817,5 +844,45 @@ ul {
     grid-row-gap: 30px;
     line-height: 25px;
   }
+
+  .screenshots ul{
+    text-align:center;
+    padding-top:3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100%);
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+
+  }
+  .nav-links {
+    display:none;
+  }
+  .menuButton{
+    visibility:visible;
+  }
+  .projects-list ul{
+    padding-top:3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,30%);
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+  }
+  .madeWith, .madeWithTH{
+    line-height: 35px;
+    /* padding-top:150px; */
+    text-align:center;
+    padding-bottom:5%;
+  }
+  .projects-list ul{
+    padding-top:40px;
+    padding-right:10%;
+    margin-bottom:250%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100%);
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+
+  }
 }
+
 
