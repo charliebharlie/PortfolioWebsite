@@ -659,11 +659,11 @@ ul {
 /* Screen for iPads  */
 @media only screen and (max-width: 1399px) and (min-width: 401px){
   .home-page-1, .about-container, .works-text, .projects-list-text{
-    width: 800px;
+    width: 1000px;
   }
 
   .home-page-1 li p{
-    font-size: 12px;
+    font-size: 16px;
     line-height: 3;
     padding: 10px;
   }
@@ -679,12 +679,12 @@ ul {
   }
 
   .home-page-center{
-    width: 225px;
+    width: 300px;
     padding: 5px;
     border: 1px solid black;
   }
   .about-container ul li p a{
-    width: 75px;
+    width: 150px;
     margin-top: 20px;
     margin-bottom: 25px;
     font-size: 14px;
@@ -693,7 +693,7 @@ ul {
   .home-page-1 li{
     padding-top: 50px;
     display: flex;
-    grid-column-gap: 20px;
+    grid-column-gap: 50px;
   }
 
   .about-container{
@@ -702,15 +702,15 @@ ul {
   }
 
   .about-container ul li p{
-    font-size: 12px;
+    font-size: 16px;
     padding: 5px;
-    width: 400px;
+    width: 700px;
     line-height: 3;
   }
 
   .about-container ul li{
     display: flex;
-    grid-column-gap: 20px;
+    grid-column-gap: 50px;
   }
 
   .about-container ul li img{
@@ -738,7 +738,7 @@ ul {
   }
 
   .about-content, .projects-content, .works-content{
-    width: 600px;
+    width: 800px;
     font-size: 18px;
     margin-left: 7.5%;
   }
@@ -749,20 +749,17 @@ ul {
   }
 
   .projects-list-text, .works-text{
-    width: 700px;
+    width: 1000px;
     font-size: 18px;
     margin-left: 7.5%;
     margin-top: 20px;
   }
 
-  .nav-links {
-    display:none;
-  }
   .menuButton{
-    visibility:visible;
+    visibility:hidden;
   }
   .projects-list-images ul li img, .works-images ul li img{
-    width: 100px;
+    width: 150px;
   }
 }
 
