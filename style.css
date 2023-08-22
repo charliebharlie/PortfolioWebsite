@@ -326,7 +326,6 @@ div{
 
 .nav-list{
   right:-400px;
-  display: block;
   position: fixed;
   margin-top:100px;
   font-size: 50px;
@@ -365,11 +364,12 @@ div{
   color: var(--main-text-color);
 }
 .menuPart{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: left;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 20px;
   background: var(--main-page-color);
+  font-size: 20px;
 }
 
 .socials{
