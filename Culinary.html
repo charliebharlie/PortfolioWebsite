@@ -89,4 +89,47 @@
     <a href="https://iuri.is/" target="_blank">//Visit Here</a>
   </div>
 </div>
+
+<body>
+<nav>
+  <div class = "overlay"></div>
+  <div class="menuButton">
+    <button class="button" onclick="showMenu()">
+      <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+  </div>
+  <script>
+    function showMenu(){
+      let dropMenu = document.getElementById("mobileMenu");
+      dropMenu.classList.toggle("active");
+      var overlay = document.querySelector('.overlay');
+      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+  <div class="nav-list" id = "mobileMenu">
+    <div class = "menuPart">
+      <a href = "index.html"> getHome()</a>
+    </div>
+    <div class = "menuPart">
+      <a href = "about.html">getAbout()</a>
+    </div>
+    <div class = "menuPart">
+      <a href = "projects.html">getProjects()</a>
+    </div>
+    <div class = "menuPart">
+      <a href="work.html">getWork()</a>
+    </div>
+    <div class = "socials">
+      <div class = "menuPart">
+        <a href="https://github.com/charliebharlie" id = "github" target="_blank"><i
+          class="fa-brands fa-github fa-2x"></i></a>
+      </div>
+      <div class = "menuPart">
+        <a href="https://www.linkedin.com/in/charlie-liu-2981b7225/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+</body>
 </html>
