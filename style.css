@@ -625,8 +625,8 @@ ul {
     visibility: hidden;
   }
 }
-/* Screen for Macbooks  */
-@media only screen and (max-width: 2304px) and (min-width: 1200px){
+/* Screen for Laptop  */
+@media only screen and (max-width: 2304px) and (min-width: 1400px){
   .home-page-1, .about-container, .works-text, .projects-list-text{
     width: 1200px;
   }
@@ -636,7 +636,7 @@ ul {
   }
 
   .home-page-1 li{
-    grid-column-gap: 100px  ;
+    grid-column-gap: 100px;
   }
   .home-page-1 li p{
     font-size: 20px;
@@ -656,8 +656,118 @@ ul {
   }
 }
 
+/* Screen for iPads  */
+@media only screen and (max-width: 1399px) and (min-width: 401px){
+  .home-page-1, .about-container, .works-text, .projects-list-text{
+    width: 800px;
+  }
+
+  .home-page-1 li p{
+    font-size: 12px;
+    line-height: 3;
+    padding: 10px;
+  }
+
+  .home-page-bold-text{
+    font-size: 24px;
+  }
+
+  .home-page-1 ul li img, .home-page-work{
+    font-size: 300px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  .home-page-center{
+    width: 225px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  .about-container ul li p a{
+    width: 75px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+
+  .home-page-1 li{
+    padding-top: 50px;
+    display: flex;
+    grid-column-gap: 20px;
+  }
+
+  .about-container{
+    padding-top: 35px;
+    margin-left: 7.5%;
+  }
+
+  .about-container ul li p{
+    font-size: 12px;
+    padding: 5px;
+    width: 400px;
+    line-height: 3;
+  }
+
+  .about-container ul li{
+    display: flex;
+    grid-column-gap: 20px;
+  }
+
+  .about-container ul li img{
+    width: 200px;
+    padding: 5px;
+  }
+
+  .about-bold-text{
+    font-size: 18px;
+  }
+
+  .about-header, .projects-header, .work-header{
+    width: 600px;
+    font-size:48px;
+    padding-bottom: 30px;
+    margin-left: 7.5%;
+    padding-top: 30px;
+  }
+
+  .projects-list-header, .works-header{
+    width: 600px;
+    font-size:48px;
+    margin-left: 7.5%;
+    padding-top: 30px;
+  }
+
+  .about-content, .projects-content, .works-content{
+    width: 600px;
+    font-size: 18px;
+    margin-left: 7.5%;
+  }
+
+  .projects-highlighters, .works-highlighters{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .projects-list-text, .works-text{
+    width: 700px;
+    font-size: 18px;
+    margin-left: 7.5%;
+    margin-top: 20px;
+  }
+
+  .nav-links {
+    display:none;
+  }
+  .menuButton{
+    visibility:visible;
+  }
+  .projects-list-images ul li img, .works-images ul li img{
+    width: 100px;
+  }
+}
+
 /* Screen for Phones */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 400px) {
   .home-page-1, .about-container, .works-text, .projects-list-text{
     width: 400px;
   }
