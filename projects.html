@@ -89,8 +89,8 @@
     function showMenu(){
       let dropMenu = document.getElementById("mobileMenu");
       dropMenu.classList.toggle("active");
-      var overlay = document.querySelector('.overlay');
-      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+      let overlay = document.querySelector('.overlay');
+      overlay.style.display = dropMenu.classList.contains("active") ? 'block' : 'none';
     }
   </script>
 

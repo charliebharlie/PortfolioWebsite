@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title> About </title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
@@ -75,6 +75,8 @@
       interactive websites, while also delving into backend development using Java and Python.
       With my diverse skill set, I am excited to tackle complex programming challenges and
       contribute to the ever-evolving field of software engineering.
+
+        <br>
         <a href = "Charlie%20Resume.docx.pdf" target = "_blank"> Resume </a>
       </p>
     </li>
@@ -104,8 +106,8 @@
     function showMenu(){
       let dropMenu = document.getElementById("mobileMenu");
       dropMenu.classList.toggle("active");
-      var overlay = document.querySelector('.overlay');
-      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+      let overlay = document.querySelector('.overlay');
+      overlay.style.display = dropMenu.classList.contains("active") ? 'block' : 'none';
     }
   </script>
 

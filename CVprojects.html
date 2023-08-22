@@ -64,7 +64,7 @@
 
   <ul class = "projects-features-list">
     <li>
-      Employed <span class = "red">versatile image processing techniques </span>, including
+      Employed <span class = "red">versatile image processing techniques</span>, including
       blurring, HSV thresholding, and contour extraction, to enhance the visibility of bright
       orange cones, enabling <span class = "red">improved navigation</span> and <span
       class="red">obstacle avoidance</span> for autonomous vehicles.
@@ -125,8 +125,8 @@
     function showMenu(){
       let dropMenu = document.getElementById("mobileMenu");
       dropMenu.classList.toggle("active");
-      var overlay = document.querySelector('.overlay');
-      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+      let overlay = document.querySelector('.overlay');
+      overlay.style.display = dropMenu.classList.contains("active") ? 'block' : 'none';
     }
   </script>
 

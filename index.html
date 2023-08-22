@@ -66,7 +66,7 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
   </div>
-</section>
+
   <!-- Start of home section -->
   <div class = "home-page-1">
     <ul>
@@ -75,6 +75,7 @@
         <p> <span class = "home-page-bold-text"> Hi! </span> I'm Charlie Liu and I'm a CS Student at
           Wisconsin-Madison with interests in data management, web development, and AI. I enjoy
           working out, listening to music, and playing video games.
+          <br>
           <a href = "https://www.linkedin.com/in/charlie-liu-2981b7225/" class =
             "home-page-center" target = "_blank"> Connect with me on LinkedIn! </a> </p>
       </li>
@@ -85,10 +86,11 @@
           Some projects I'm working on is analyzing and manipulating road images using OpenCV to
           organize the sensor inputs from Autonomous cars.
 
-          <a href = "projects.html" class = "home-page-center"> Here is a link to a list of my
+          <br>
+          <a href = "projects.html" class = "home-page-center"> Link to a list of my
             projects.</a>
-
         </p>
+
         <img src = "img/1655149855071.jpg">
       </li>
 
@@ -101,13 +103,14 @@
           <span class = home-page-bold-text> Work Experience</span>
           Adaptable and skilled worker with diverse experience in culinary assistance,
           lifeguarding, and ride operation, prioritizing safety, efficiency, and customer satisfaction.
-          <a href = "work.html" class = "home-page-center"> Here is a link to a list of my
+          <br>
+          <a href = "work.html" class = "home-page-center"> Link to a list of my
             work experience.</a>
         </p>
       </li>
     </ul>
   </div>
-
+</section>
 
 <div class = "spacer">
   <div class = "content">
@@ -133,8 +136,8 @@
       function showMenu(){
         let dropMenu = document.getElementById("mobileMenu");
         dropMenu.classList.toggle("active");
-        var overlay = document.querySelector('.overlay');
-        overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+        let overlay = document.querySelector('.overlay');
+        overlay.style.display = dropMenu.classList.contains("active") ? 'block' : 'none';
       }
     </script>
 
