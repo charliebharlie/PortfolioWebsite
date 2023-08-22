@@ -770,11 +770,12 @@ ul {
     position:fixed;
 
   }
-  .nav-links ul li{
+  .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 6px 9px;
     font-weight: bold;
+  }
 }
 
 /* Screen for Phones */
