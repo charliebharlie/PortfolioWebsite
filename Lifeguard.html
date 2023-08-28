@@ -116,6 +116,9 @@
       let dropMenu = document.getElementById("mobileMenu");
       dropMenu.classList.toggle("active");
       let overlay = document.querySelector('.overlay');
+      // what this does is that if the overlay is on, this means that the display is 'none', this activates when we first toggle the menu once
+      // first attempt (menu button clicked_: display is set to 'none'
+      // on the second attempt: display is already on none, so the if statement fails, in which the display is set to block
       overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
     }
   </script>
