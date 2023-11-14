@@ -589,6 +589,9 @@ ul {
   grid-template-columns: repeat(auto-fill,30%);
   grid-column-gap: 5%;
 }
+.projects-list-images ul li, .works-images ul li{
+  padding-bottom: 150px;
+}
 
 .projects-list-images ul li img:hover, .works-images ul li img:hover{
   box-shadow: 0 0 20px 0px rgb;
