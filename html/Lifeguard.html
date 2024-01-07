@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <title> Work </title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
 </head>
@@ -28,10 +28,10 @@
 <section class ="header">
 
   <nav>
-    <p href="index">getRideOperator()</p>
+    <p href="index">getLifeguard()</p>
     <div class="nav-links">
       <ul>
-        <li><a href="index.html">getHome()</a></li>
+        <li><a href="../index.html">getHome()</a></li>
         <li><a href = "about.html">getAbout()</a></li>
         <li><a href="projects.html">getProjects()</a></li>
         <li><a href = "work.html">getWork()</a> </li>
@@ -44,57 +44,55 @@
   </nav>
 </section>
 
-
-<h1 class = "works-header">getRideOperator<span class = "red">work</span>()</h1>
-
+<h1 class = "works-header">getLifeguard<span class = "red">work</span>()</h1>
 <section class = "works-text">
   <div class = "works-highlighters"> //Description </div>
+  As a lifeguard at <span class = "red">Great America</span>, I was responsible for ensuring the
+  safety of swimmers. I underwent training and
+  successfully passed written and physical tests which prepared me with quick response skills
+  to identify potential risks and prevent accidents. I acquired essential life-saving skills,
+  including CPR and how to treat spinal injuries in water, ensuring I can respond promptly to
+  emergencies. Additionally, I am trained to assist individuals with choking, equipped to handle
+  critical situations and provide aid when needed, making safety my top priority. With vigilance
+  and professionalism, I enforce pool and beach rules, providing a safe and enjoyable environment
+  for all visitors. As a lifeguard, I serve as a trusted guardian, ready to respond to
+  emergencies and save lives if necessary.
 
-
-  As a ride operator at <span class = "red">Great America</span>, my main focus was ensuring the
-  safety and enjoyment of amusement park
-  visitors. I efficiently operated rides, assisted guests, and managed queues to create a
-  positive  experience. Handling guest concerns calmly was a vital aspect of the job, and it
-  offered continuous learning opportunities to cater to their needs. Before starting, I underwent
-  comprehensive training to operate multiple rides, learning the intricacies and safety
-  protocols. This preparation equipped me to confidently handle various attractions,
-  contributing to a smooth and thrilling experience for all guests.
 
   <div class = "works-highlighters"> //Skills </div>
+
   <ul class = "works-highlighters-list">
     <li>
-      Interacting with guests daily has improved my <span class = "red"> customer service skills
-    </span>, ensuring a positive experience for each visitor by attentively addressing guests'
-      concerns and complaints.
+      Through extensive training in CPR, spinal injury management, and choking aid, I demonstrated
+      the ability to <span class = "red"> respond promptly and confidently during critical
+      situations </span>and was certified by Ellis, the best lifeguard certification
     </li>
 
     <li>
-      I honed my <span class = "red">communication abilities</span> by working with other ride
-      operators and providing clear instructions to guests
+      <span class ="red"> Developed strong communication skills </span>allowed me to interact
+      effectively with guests, providing clear instructions and addressing their concerns to
+      ensure a positive and safe experience.
     </li>
 
     <li>
-      Handling ride-related issues and resolving guest complaints has strengthened my
-      <span class = "red">problem-solving skills</span>, allowing me to quickly find the
-      appropriate solution.
+      Remaining <span class = "red">attentive and observant</span>, I constantly monitored the
+      pool or beach area, identifying potential hazards and swiftly responding to distress
+      signals from swimmers.
     </li>
 
     <li>
-      I have gained expertise in <span class ="red"> handling emergencies and evacuations</span>,
-      ensuring the safety and well-being of guests in critical situations.
+      As a lifeguard, I developed the ability to make <span class ="red"> quick and sound decisions
+      during emergencies</span>, ensuring the well-being of guests and coordinating with other
+      team members as needed.
     </li>
 
     <li>
-      Working closely with other ride operators and park staff has fostered <span class ="red">
-      effective teamwork </span>, contributing to a seamless and enjoyable park experience for
-      guests.
+      Working collaboratively with fellow lifeguards, pool staff, and first responders, I
+      <span class = "red"> demonstrated effective teamwork skills </span>in managing rescue
+      efforts and maintaining a secure environment.
     </li>
-  </ul>
-  <ul class = "works-highlighters-list">
-
   </ul>
 </section>
-
 
 <div class = "spacer">
   <div class = "content">
@@ -118,6 +116,9 @@
       let dropMenu = document.getElementById("mobileMenu");
       dropMenu.classList.toggle("active");
       let overlay = document.querySelector('.overlay');
+      // what this does is that if the overlay is on, this means that the display is 'none', this activates when we first toggle the menu once
+      // first attempt (menu button clicked_: display is set to 'none'
+      // on the second attempt: display is already on none, so the if statement fails, in which the display is set to block
       overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
     }
   </script>

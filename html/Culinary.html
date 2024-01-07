@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <title> Work </title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
 </head>
@@ -28,13 +28,13 @@
 <section class ="header">
 
   <nav>
-    <p href="index">getWork()</p>
+    <p href="index">getCulinaryAssistant()</p>
     <div class="nav-links">
       <ul>
-        <li><a href="index.html">getHome()</a></li>
+        <li><a href="../index.html">getHome()</a></li>
         <li><a href = "about.html">getAbout()</a></li>
         <li><a href="projects.html">getProjects()</a></li>
-        <li> <span id = "red">getWork()</a> </span></li>
+        <li><a href = "work.html">getWork()</a> </li>
         <li><a href="https://github.com/charliebharlie" target="_blank"><i
           class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
         <li><a href="https://www.linkedin.com/in/charlie-liu-2981b7225/" target="_blank"><i
@@ -44,30 +44,42 @@
   </nav>
 </section>
 
-<h1 class = "work-header">getWork(<span class = "red-name">charlie</span>)</h1>
+<h1 class = "works-header">getCulinary<span class = "red">work</span>()</h1>
+<section class = "works-text">
+  <div class = "works-highlighters"> //Description </div>
+  As a culinary assistant at <span class ="red">Gordon Dining and Event Center</span>, I
+  collaborated closely with chefs and team members to deliver food
+  service at my college's dining hall, boasting strong teamwork and communication skills. Working
+  in a fast-paced environment, I adapted quickly and assisted in food preparation and
+  presentation,  demonstrating attention to detail and a commitment to maintaining hygiene
+  standards. This role allowed me to learn from experienced chefs and gain valuable insights,
+  making it an appealing and interesting experience for my culinary skills and a passion for
+  delivering high-quality service.
+  <div class = "works-highlighters"> //Skills </div>
 
-<div class = "works-content">
-  <ul>
+  <ul class = "works-highlighters-list">
     <li>
-      Compilation of my Work Experience
+      <span class ="red">Willingness to learn from experienced professionals</span> allowed me to
+      collaborate closely with both professionals and team members results in the delivery of
+      excellent service and foster a positive working environment.
     </li>
 
     <li>
-      Each one of my work opportunity is accessible by clicking on the image
+      Proven track record of <span class = "red"> maintaining high standards </span> in food
+      preparation and presentation, showcasing a keen eye for detail.
+    </li>
+
+    <li>
+      <span class ="red"> Adapting quickly to dynamic </span> kitchen environments, effectively
+      handling changing priorities and varying guest needs.
+    </li>
+
+    <li>
+      Working efficiently in a busy dining hall setting hones your <span class ="red"> time management
+      skills, </span> ensuring timely food preparation and service.
     </li>
   </ul>
-</div>
-
-<body>
-<div class = "works-images">
-<ul>
-  <!--- Change the jpg's to png's --->
-  <li> <a href = "Lifeguard.html"> <img src = "img/Lifeguard.jpg"></a></li>
-  <li> <a href = "Culinary.html"> <img src = "img/Culinary.jpg"> </a></li>
-  <li> <a href = "Ride.html"> <img src = "img/Ride.jpg"> </a></li>
-</ul>
-</div>
-</body>
+</section>
 
 <div class = "spacer">
   <div class = "content">
@@ -79,7 +91,6 @@
 </div>
 
 <body>
-
 <nav>
   <div class = "overlay"></div>
   <div class="menuButton">
@@ -91,7 +102,7 @@
     function showMenu(){
       let dropMenu = document.getElementById("mobileMenu");
       dropMenu.classList.toggle("active");
-      var overlay = document.querySelector('.overlay');
+      let overlay = document.querySelector('.overlay');
       overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
     }
   </script>
@@ -107,7 +118,7 @@
       <a href = "projects.html">getProjects()</a>
     </div>
     <div class = "menuPart">
-      <span class = "red">getWork()</span>
+      <a href="work.html">getWork()</a>
     </div>
     <div class = "socials">
       <div class = "menuPart">

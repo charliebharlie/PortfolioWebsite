@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <title> About </title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
 </head>
@@ -29,7 +29,7 @@
 <section class ="header">
 
   <nav>
-    <p href="index">getPasswordCrackingproject()</p>
+    <p href="index">getTriageProject()</p>
     <div class="nav-links">
       <ul>
         <li><a href="index.html">getHome()</a></li>
@@ -45,75 +45,61 @@
   </nav>
 </section>
 
-<div class = "projects-list-header">getPasswordCracking<span class = "red-name">project</span>()
-  </div>
+<h1 class = "projects-list-header">getTriage<span class = "red-name">project</span>()</h1>
+
 <section class = "projects-list-text">
+
   <div class = "projects-highlighters"> //Description </div>
-
-  This project focuses on optimizing password cracking strategies through the <span
-  class = "red"> implementation of a Binary Search Tree (BST) approach</span>. By organizing
-  passwords based on 3 criteria, the goal is to <span class ="red">enhance the efficiency</span>
-  of cracking process. This project aims to develop a more effective and targeted method for
-  password cracking than brute forcing, but is not used for malicious intent and only emphasizes
-  the use of a data structure and serves as a side project.
-
-  <br>
-  <br>
-  Using the <span class ="red">BST</span> approach, the password cracking
-  process uses prioritizes passwords based on <span class ="red"> strength</span>,<span
-  class = "red"> hashed </span>passwords, and <span class ="red"> frequency </span> of use,
-  enabling a targeted and efficient search to increase the likelihood of
-  successfully cracking common and stronger passwords, increasing the likelihood of gaining
-  access.
-
-  <a href = "https://github.com/charliebharlie/PasswordCracking" class = "projects-list-link"
-     target = "_blank"> //Here is a link to the code</a>
-
+  This project is designed as an efficient method for <span class ="red">prioritizing patients
+</span> based on their medical needs and the severity of their conditions. Leveraging my
+  technical expertise, I utilized a <span class ="red">min-array heap</span> data structure to
+  organize those with more severe triage levels.
+  <a href = "https://github.com/charliebharlie/TriageLevel" class = "projects-list-link" target =
+    "+_blank"> //Here is a link to the code </a>
 
   <div class = "projects-highlighters"> //Features </div>
-
-  <ul class = "projects-features-list">
+  <ul class = projects-features-list>
     <li>
-      The project utilizes the <span class = "red"> Binary Search Tree (BST) </span> approach
-      for password cracking which creates a neat, ranking data structure that allows for efficient
-      search, removal, and addition of new passwords
+      Patients are categorized into specific triage levels: Immediate (<span
+      style = "color:red">Red</span>) for life-threatening cases, Delayed (<span
+      style="color:gold">Yellow</span>) for serious but stable conditions, and Minimal (<span
+      style = "color: green">Green</span>) for non-urgent cases.
     </li>
 
     <li>
-      Narrows down the search space and comparison operations for faster password
-      retrieval by <span class = "red">efficiently dividing the search space into smaller
-      subsets</span>, reducing the number of comparisons needed to find the target password
+      <span class ="red"> Interactive platform</span> where users can access all necessary
+      details for a clinic based on the triage level <strong class = "parenthesis">(see the images
+      below to see functions)</strong>, ensuring appropriate patient care
     </li>
 
     <li>
-      <span class ="red">Clear visualization </span>of<span class ="red"> each password's rank
-    </span>based on the comparison criteria, effectively organizing them from the worst to the
-      best.
+      Min-array heap enables <span class = "red">constant-time retrieval</span> of the highest
+      priority patient, ensuring <span class = "red"> efficiency</span> in <span class ="red">
+      emergency situations</span> with a large number of patients.
     </li>
 
     <li>
-      Enables <span class ="red"> easy insertion of new passwords </span>, even ensuring their
-      seamless integration into the ranking system.
+      <span class = "red">Dynamic nature</span> of the min array heap-based solution allows
+      for <span class = "red">real-time adaptability</span> during high-stress scenarios with
+      rapidly changing demands.
     </li>
-  </ul>
 
-
+    </ul>
   <div class = "projects-highlighters">//Some images of examples below:</div>
+
 </section>
-
-
-<div class = "projects-images">
+<div class = projects-images>
   <ul>
     <li>
-      <img src = "img/StrengthPassword.png">
+      <img src = "../img/projects/TriageTestWithPatients.png">
     </li>
 
     <li>
-      <img src = "img/OccurrencesPassword.png">
+      <img src = "../img/projects/TriageTestRemovePatients.png">
     </li>
 
     <li>
-      <img src = "img/HashedPassword.png">
+      <img src = "../img/projects/TriageTestSeenPatient.png">
     </li>
   </ul>
 </div>
@@ -147,7 +133,7 @@
 
   <div class="nav-list" id = "mobileMenu">
     <div class = "menuPart">
-      <a href = "index.html"> getHome()</a>
+      <a href = "../index.html"> getHome()</a>
     </div>
     <div class = "menuPart">
       <a href = "about.html">getAbout()</a>

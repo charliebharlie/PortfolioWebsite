@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title> About </title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+</head>
+
+
+<style>
+  body{
+    min-height:100vh;
+    width:100%;
+    background-color: var(--main-background-color);
+    background.position: center;
+    background-size: cover;
+    position: relative;
+  }
+</style>
+<div class ="bar">
+  <div class ="loading"></div>
+</div>
+<div class ="header-bg">
+  <div class ="bg"></div>
+</div>
+
+<section class ="header">
+
+  <nav>
+    <p href="index">getDashBoardProject()</p>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">getHome()</a></li>
+        <li><a href = "about.html">getAbout()</a></li>
+        <li><a href="projects.html">getProjects()</a></li>
+        <li> <a href = "work.html">getWork()</a></li>
+        <li><a href="https://github.com/charliebharlie" target="_blank"><i
+          class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/charlie-liu-2981b7225/" target="_blank"><i
+          class="fa-brands fa-linkedin icon-2x" style="font-size: 30px;"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<h1 class = "projects-list-header">getDashBoard<span class = "red-name">project</span>()</h1>
+
+<section class = "projects-list-text">
+  <div class = projects-highlighters> //Description </div>
+  TO BE UPDATED
+  <a href = "https://github.com/badgerloop-software/chase-car-dashboard" class = "projects-list-link"
+     target = "_blank">//Here is a link to the code</a>
+
+  <div class = "projects-highlighters"> //Features </div>
+
+  <ul class = "projects-features-list">
+    <li> TO BE UPDTAED</li>
+
+  </ul>
+
+  <a href = "../img/projects/ChaseCarDashboard.png" class = "projects-list-link" target = "_blank">
+    //Here
+    is a
+    link to the Image</a>
+</section>
+
+<section class = "projects-list-text-secondary">
+
+
+</section>
+
+
+<div class = "spacer">
+  <div class = "content">
+    <span style = "color: black" class = "comment"> Made with 🤍 by Charlie Liu
+      <br> Inspired by Iuri.is
+    </span>
+    <a href="https://iuri.is/" target="_blank">//Visit Here</a>
+  </div>
+</div>
+
+
+<body>
+<nav>
+  <div class = "overlay"></div>
+  <div class="menuButton">
+    <button class="button" onclick="showMenu()">
+      <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+  </div>
+  <script>
+    function showMenu(){
+      let dropMenu = document.getElementById("mobileMenu");
+      dropMenu.classList.toggle("active");
+      let overlay = document.querySelector('.overlay');
+      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+  <div class="nav-list" id = "mobileMenu">
+    <div class = "menuPart">
+      <a href = "index.html"> getHome()</a>
+    </div>
+    <div class = "menuPart">
+      <a href = "about.html">getAbout()</a>
+    </div>
+    <div class = "menuPart">
+      <a href = "projects.html">getProjects()</a>
+    </div>
+    <div class = "menuPart">
+      <a href="work.html">getWork()</a>
+    </div>
+    <div class = "socials">
+      <div class = "menuPart">
+        <a href="https://github.com/charliebharlie" id = "github" target="_blank"><i
+          class="fa-brands fa-github fa-2x"></i></a>
+      </div>
+      <div class = "menuPart">
+        <a href="https://www.linkedin.com/in/charlie-liu-2981b7225/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
