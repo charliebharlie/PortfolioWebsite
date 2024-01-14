@@ -7,7 +7,7 @@
   "author": "",
   "scripts": {
     "build": "parcel build html/index.html",
-    "dev": "parcel index.html --open",
+    "dev": "parcel html/index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
